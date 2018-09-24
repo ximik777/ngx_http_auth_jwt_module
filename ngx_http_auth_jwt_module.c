@@ -52,7 +52,7 @@ static ngx_conf_enum_t ngx_http_jwt_algorithms[] = {
 static ngx_command_t ngx_http_auth_jwt_commands[] = {
 
   { ngx_string("auth_jwt"),
-    NGX_HTTP_MAIN_CONF|NGX_HTTP_SRV_CONF|NGX_HTTP_LOC_CONF|NGX_CONF_TAKE12,
+    NGX_HTTP_MAIN_CONF|NGX_HTTP_SRV_CONF|NGX_HTTP_LOC_CONF|NGX_HTTP_LIF_CONF|NGX_CONF_TAKE12,
     ngx_http_auth_jwt_auth_jwt,
     NGX_HTTP_LOC_CONF_OFFSET,
     0,
